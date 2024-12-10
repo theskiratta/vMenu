@@ -355,6 +355,7 @@ namespace vMenuClient.data
             {"weapon_goldsmg", GetLabelText("WT_SMG_GOLD") },
             {"weapon_vp897", GetLabelText("WT_PI_VP897") },
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
+            {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -572,6 +573,7 @@ namespace vMenuClient.data
             {"weapon_goldsmg", GetLabelText("WT_SMG_GOLD") },
             {"weapon_vp897", GetLabelText("WT_PI_VP897") },
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
+            {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
         };
         #endregion
 
@@ -793,6 +795,7 @@ namespace vMenuClient.data
             ["weapon_fm2_hk416"] = Permission.WPCarbineRifleMk2,
             ["weapon_vp897"] = Permission.WPHeavyPistol,
             ["weapon_gl06ll"] = Permission.WPStunGun,
+            ["weapon_prolaser4"] = Permission.WPStunGun,
         };
         #endregion
 
