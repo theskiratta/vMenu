@@ -562,7 +562,7 @@ namespace vMenuClient.data
             // {"weapon_combatrifle", GetLabelText("WT_RIFLE_COMR") },
             // {"weapon_protorifle", GetLabelText("WT_PROTORFL") },
             // {"weapon_servicecarbine", GetLabelText("WT_CRBN_SRVC") },
-            {"weapon_stealthcarbine", GetLabelText("WT_RIFLE_STLTH") },
+            // {"weapon_stealthcarbine", GetLabelText("WT_RIFLE_STLTH") },
             // {"weapon_navycarbine", GetLabelText("WT_NVYCARBINE") },
             // {"weapon_precisioncarbine", GetLabelText("WT_PRECISIONCRBN") },
             // {"weapon_militarycarbine", GetLabelText("WT_RIFLE_MTLCBN") },
@@ -574,6 +574,7 @@ namespace vMenuClient.data
             {"weapon_vp897", GetLabelText("WT_PI_VP897") },
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
             {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
+            {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") }
         };
         #endregion
 
@@ -796,6 +797,7 @@ namespace vMenuClient.data
             ["weapon_vp897"] = Permission.WPHeavyPistol,
             ["weapon_gl06ll"] = Permission.WPStunGun,
             ["weapon_prolaser4"] = Permission.WPStunGun,
+            ["weapon_singleshot"] = Permission.WPCompactGrenadeLauncher,
         };
         #endregion
 
@@ -1712,16 +1714,16 @@ namespace vMenuClient.data
             ["COMPONENT_FMSUPP_22"] = "AAC Titan-QD Suppressor",
             ["COMPONENT_FMSUPP_23"] = "OSS Helix HX-QD Suppressor",
             ["COMPONENT_FMSUPP_24"] = "Timberwolf Muzzle Brake",
-            ["COMPONENT_FMSUPP_25"] = "SFMB338 Muzzle Break",
+            ["COMPONENT_FMSUPP_25"] = "SFMB338 Muzzle Brake",
             ["COMPONENT_FMSUPP_26"] = "SOCOM 338 Suppressor",
-            ["COMPONENT_FMSUPP_27"] = "ASR338 Muzzle Break",
+            ["COMPONENT_FMSUPP_27"] = "ASR338 Muzzle Brake",
             ["COMPONENT_FMSUPP_28"] = "Harvester 338 Suppressor",
             ["COMPONENT_FMSUPP_29"] = "SRD762 TI 10 Suppressor",
             ["COMPONENT_FMSUPP_30"] = "SRD762 TI 16 Suppressor",
             ["COMPONENT_FMSUPP_31"] = "SRD762 MIL 16 Suppressor",
             ["COMPONENT_FMSUPP_32"] = "SRD762 QD 10 Suppressor",
 
-            ["COMPONENT_FMSCOPE_01"] = "Scope #1",
+            ["COMPONENT_FMSCOPE_01"] = "Romeo4T Red Dot",
             ["COMPONENT_FMSCOPE_02"] = "Scope #2",
             ["COMPONENT_FMSCOPE_03"] = "Scope #3",
             ["COMPONENT_FMSCOPE_04"] = "Scope #4",
@@ -2636,9 +2638,9 @@ namespace vMenuClient.data
             // ["COMPONENT_PROTORIFLE_SIGHT_01"] = GetLabelText("WCT_IRON_SIGHT"),
             // ["COMPONENT_AT_SCOPE_SERVICE"] = GetLabelText("WCT_SCOPE_SRVC"),
             // ["COMPONENT_AT_MUZZLE_MOD"] = GetLabelText("WCT_MUZMOD"),
-            ["COMPONENT_AT_STEALTHCARBINE_SIGHT"] = GetLabelText("WCT_IRON_SIGHT_STEALTH"),
-            ["COMPONENT_AT_AR_SUPP_03"] = GetLabelText("WCT_SUPP_STH"),
-            ["COMPONENT_AT_RAILCOVER_STEALTH"] = GetLabelText("WCT_RAIL_STH"),
+            //["COMPONENT_AT_STEALTHCARBINE_SIGHT"] = GetLabelText("WCT_IRON_SIGHT_STEALTH"),
+            //["COMPONENT_AT_AR_SUPP_03"] = GetLabelText("WCT_SUPP_STH"),
+            //["COMPONENT_AT_RAILCOVER_STEALTH"] = GetLabelText("WCT_RAIL_STH"),
             // ["COMPONENT_NAVYCARBINE_SIGHT_01"] = GetLabelText("WCT_NAVYCARBINEIRON_SIGHT"),
             // ["COMPONENT_AT_STOCK_01"] = GetLabelText("WCT_S1"),
             // ["COMPONENT_AT_STOCK_02"] = GetLabelText("WCT_S2"),
