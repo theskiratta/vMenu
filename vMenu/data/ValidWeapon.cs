@@ -356,6 +356,7 @@ namespace vMenuClient.data
             {"weapon_vp897", GetLabelText("WT_PI_VP897") },
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
             {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
+            {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -574,7 +575,11 @@ namespace vMenuClient.data
             {"weapon_vp897", GetLabelText("WT_PI_VP897") },
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
             {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
-            {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") }
+
+            // Slicks new guns
+            {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") },
+            {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
+
         };
         #endregion
 
@@ -797,7 +802,10 @@ namespace vMenuClient.data
             ["weapon_vp897"] = Permission.WPHeavyPistol,
             ["weapon_gl06ll"] = Permission.WPStunGun,
             ["weapon_prolaser4"] = Permission.WPStunGun,
+
+            // Slicks new guns
             ["weapon_singleshot"] = Permission.WPCompactGrenadeLauncher,
+            ["weapon_assaultmg"] = Permission.WPCombatMGMk2,
         };
         #endregion
 
@@ -2674,6 +2682,17 @@ namespace vMenuClient.data
             ["COMPONENT_GL06LL_CLIP_01"] = GetLabelText("WCT_CLIP1"),
             ["COMPONENT_GL06LL_GRIP_01"] = GetLabelText("WCT_GRIP"),
             ["COMPONENT_GL06LL_SCOPE_01"] = GetLabelText("WCT_SCOPE_SML"),
+
+            // Slicks new guns
+            ["COMPONENT_ASSAULTMG_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_ASSAULTMG_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_ASSAULTMG_BIPOD_01"] = "Folded Bipod",
+            ["COMPONENT_ASSAULTMG_BIPOD_02"] = "Unfolded Bipod",
+
+            ["COMPONENT_AUTOMATICPISTOL_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_AUTOMATICPISTOL_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_AUTOMATICPISTOL_MAGHOLDER"] = "Magazine Holder",
+            ["COMPONENT_AUTOMATICPISTOL_SUPP_01"] = GetLabelText("WCT_SUPP"),
         };
         #endregion
 
