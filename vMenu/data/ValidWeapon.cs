@@ -357,9 +357,12 @@ namespace vMenuClient.data
             {"weapon_gl06ll", "BT GL-06 Less-Lethal" },
             {"weapon_prolaser4", "Pro Laser 4 Speed Gun" },
 
+            // Slicks new weapons
             {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") },
             {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") },
+            {"weapon_jammer", GetLabelText("WT_JAMMER") },
+            {"weapon_incendiarygrenade", GetLabelText("WT_GNADE_INC") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -583,6 +586,8 @@ namespace vMenuClient.data
             {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") },
             {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") } ,
+            {"weapon_jammer", GetLabelText("WT_JAMMER") },
+            {"weapon_incendiarygrenade", GetLabelText("WT_GNADE_INC") },
 
         };
         #endregion
@@ -811,6 +816,8 @@ namespace vMenuClient.data
             ["weapon_singleshot"] = Permission.WPCompactGrenadeLauncher,
             ["weapon_assaultmg"] = Permission.WPCombatMGMk2,
             ["weapon_automaticpistol"] = Permission.WPAPPistol,
+            ["weapon_jammer"] = Permission.WPEMPLauncher,
+            ["weapon_incendiarygrenade"] = Permission.WPMolotov,
         };
         #endregion
 
