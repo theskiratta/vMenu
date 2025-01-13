@@ -499,7 +499,7 @@ namespace vMenuClient.menus
                     var vehicle = GetVehicle();
 
                     // Check if the player is the driver of the vehicle, if so, continue.
-                    if (vehicle.GetPedOnSeat(VehicleSeat.Driver) == new Ped(Game.PlayerPed.Handle))
+                    if (vehicle.GetPedOnSeat(VehicleSeat.Driver) == (Game.PlayerPed.Handle))
                     {
                         // Repair vehicle.
                         if (item == fixVehicle)
@@ -1178,7 +1178,7 @@ namespace vMenuClient.menus
                         switch (itemIndex)
                         {
                             case 0:
-                            case 1:    
+                            case 1:
                             case 2:
                                 primaryColor = VehicleData.ClassicColors[newIndex].id;
                                 break;
@@ -1235,7 +1235,7 @@ namespace vMenuClient.menus
                                 secondaryColor = VehicleData.WornColors[newIndex].id;
                                 break;
                         }
-                        
+
                         ClearVehicleCustomSecondaryColour(veh.Handle);
                         SetVehicleColours(veh.Handle, primaryColor, secondaryColor);
                     }
