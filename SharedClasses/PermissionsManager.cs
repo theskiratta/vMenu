@@ -375,6 +375,8 @@ namespace vMenuShared
             WPSKBEANBAG,
             WPFlashBang,
             WPDDM4V7,
+            WPPepperspray,
+            WPSlickGuns,
             #endregion
 
             // Weapon Loadouts Menu

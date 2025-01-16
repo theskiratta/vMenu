@@ -362,6 +362,13 @@ namespace vMenuClient.data
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") },
             {"weapon_jammer", GetLabelText("WT_JAMMER") },
             {"weapon_incendiarygrenade", GetLabelText("WT_GNADE_INC") },
+            {"weapon_servicepistol_9mm", GetLabelText("WT_SRVCPSTL_9MM") },
+            {"weapon_servicepistol_auto", GetLabelText("WT_SRVCPSTL_AUTO") },
+            {"weapon_servicepistol_45", GetLabelText("WT_SRVCPSTL_45") },
+
+            // Pepperspray
+            {"weapon_pepperspray", "Pepperspray" },
+            {"weapon_antidote", "Antidote Spray" }
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -587,6 +594,13 @@ namespace vMenuClient.data
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") } ,
             {"weapon_jammer", GetLabelText("WT_JAMMER") },
             {"weapon_incendiarygrenade", GetLabelText("WT_GNADE_INC") },
+            {"weapon_servicepistol_9mm", GetLabelText("WT_SRVCPSTL_9MM") },
+            {"weapon_servicepistol_auto", GetLabelText("WT_SRVCPSTL_AUTO") },
+            {"weapon_servicepistol_45", GetLabelText("WT_SRVCPSTL_45") },
+
+            // Pepperspray
+            {"weapon_pepperspray", "Pepperspray" },
+            {"weapon_antidote", "Antidote Spray" }
 
         };
         #endregion
@@ -812,11 +826,17 @@ namespace vMenuClient.data
             ["weapon_prolaser4"] = Permission.WPStunGun,
 
             // Slicks new guns
-            ["weapon_singleshot"] = Permission.WPCompactGrenadeLauncher,
-            ["weapon_assaultmg"] = Permission.WPCombatMGMk2,
-            ["weapon_automaticpistol"] = Permission.WPAPPistol,
-            ["weapon_jammer"] = Permission.WPEMPLauncher,
-            ["weapon_incendiarygrenade"] = Permission.WPMolotov,
+            ["weapon_singleshot"] = Permission.WPSlickGuns,
+            ["weapon_assaultmg"] = Permission.WPSlickGuns,
+            ["weapon_automaticpistol"] = Permission.WPSlickGuns,
+            ["weapon_jammer"] = Permission.WPSlickGuns,
+            ["weapon_incendiarygrenade"] = Permission.WPSlickGuns,
+            ["weapon_servicepistol_9mm"] = Permission.WPSlickGuns,
+            ["weapon_servicepistol_auto"] = Permission.WPSlickGuns,
+            ["weapon_servicepistol_45"] = Permission.WPSlickGuns,
+
+            ["weapon_pepperspray"] = Permission.WPPepperspray,
+            ["weapon_antidote"] = Permission.WPPepperspray,
         };
         #endregion
 
@@ -2704,6 +2724,31 @@ namespace vMenuClient.data
             ["COMPONENT_AUTOMATICPISTOL_CLIP_02"] = GetLabelText("WCT_CLIP2"),
             ["COMPONENT_AUTOMATICPISTOL_MAGHOLDER"] = "Magazine Holder",
             ["COMPONENT_AUTOMATICPISTOL_SUPP_01"] = GetLabelText("WCT_SUPP"),
+
+            ["COMPONENT_SERVICEPISTOL_9MM_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_SERVICEPISTOL_9MM_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_SERVICEPISTOL_9MM_CLIP_03"] = GetLabelText("WCT_CLIP_DRM"),
+            ["COMPONENT_SERVICEPISTOL_AUTO_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_SERVICEPISTOL_AUTO_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_SERVICEPISTOL_AUTO_CLIP_03"] = GetLabelText("WCT_CLIP_DRM"),
+            ["COMPONENT_SERVICEPISTOL_45_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_SERVICEPISTOL_45_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_SERVICEPISTOL_45_CLIP_03"] = GetLabelText("WCT_CLIP_DRM"),
+            ["COMPONENT_SERVICEPISTOL_SUPP"] = GetLabelText("WCT_SUPP"),
+            ["COMPONENT_SERVICEPISTOL_COMP"] = GetLabelText("WCT_COMP"),
+            ["COMPONENT_SERVICEPISTOL_FLSH"] = GetLabelText("WCT_FLASH"),
+            ["COMPONENT_SERVICEPISTOL_LSR_R"] = GetLabelText("WCT_SRVPSTL_LSR_R"),
+            ["COMPONENT_SERVICEPISTOL_LSR_G"] = GetLabelText("WCT_SRVPSTL_LSR_G"),
+            ["COMPONENT_SERVICEPISTOL_LSR_B"] = GetLabelText("WCT_SRVPSTL_LSR_B"),
+            ["COMPONENT_SERVICEPISTOL_LSR_M"] = GetLabelText("WCT_SRVPSTL_LSR_M"),
+            ["COMPONENT_SERVICEPISTOL_LSR_Y"] = GetLabelText("WCT_SRVPSTL_LSR_Y"),
+            ["COMPONENT_SERVICEPISTOL_LSR2_R"] = GetLabelText("WCT_SRVPSTL_LSR_R"),
+            ["COMPONENT_SERVICEPISTOL_LSR2_G"] = GetLabelText("WCT_SRVPSTL_LSR_G"),
+            ["COMPONENT_SERVICEPISTOL_LSR2_B"] = GetLabelText("WCT_SRVPSTL_LSR_B"),
+            ["COMPONENT_SERVICEPISTOL_LSR2_M"] = GetLabelText("WCT_SRVPSTL_LSR_M"),
+            ["COMPONENT_SERVICEPISTOL_LSR2_Y"] = GetLabelText("WCT_SRVPSTL_LSR_Y"),
+            ["COMPONENT_SERVICEPISTOL_SIGHT"] = GetLabelText("WCT_SRVPSTL_SIGHT"),
+            ["COMPONENT_SERVICEPISTOL_NIGHTSIGHT"] = GetLabelText("WCT_SRVPSTL_NIGHTSIGHT"),
         };
         #endregion
 
@@ -2812,6 +2857,29 @@ namespace vMenuClient.data
             ["Platinum"] = 7,
             ["Blue"] = 8,
             ["Yellow Utility"] = 9,
+        };
+        public static readonly Dictionary<string, int> WeaponTintsServicePistol = new()
+        {
+            ["Base"] = 0,
+            ["Green"] = 1,
+            ["Gold"] = 2,
+            ["Pink"] = 3,
+            ["Army"] = 4,
+            ["LSPD"] = 5,
+            ["Orange"] = 6,
+            ["Platinum"] = 7,
+            ["Tactical Tan"] = 8,
+            ["Tactical Tan Alt"] = 9,
+            ["Tactical Green"] = 10,
+            ["Tactical Green Alt"] = 11,
+            ["Tactical Grey"] = 12,
+            ["Tactical Grey Alt"] = 13,
+            ["B&W Two-Tone"] = 14,
+            ["Stainless V2"] = 15,
+            ["Worn N' Torn"] = 16,
+            ["Training Day - Blue"] = 17,
+            ["Training Day - Green"] = 18,
+            ["Training Day - Red"] = 19,
         };
         #endregion
 

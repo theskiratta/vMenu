@@ -549,7 +549,7 @@ namespace vMenuClient.menus
                             tints.Add(tint.Key);
                         }
                     }
-                    else if(weapon.Name.Contains("Riot Shotgun"))
+                    else if (weapon.Name.Contains("Riot Shotgun"))
                     {
                         foreach (var tint in ValidWeapons.WeaponTintsRiotShotgun)
                         {
@@ -573,6 +573,13 @@ namespace vMenuClient.menus
                     else if (weapon.Name.Contains("Pocket "))
                     {
                         foreach (var tint in ValidWeapons.WeaponTintsPocketlight)
+                        {
+                            tints.Add(tint.Key);
+                        }
+                    }
+                    else if (weapon.Name.Contains("Service Pistol "))
+                    {
+                        foreach (var tint in ValidWeapons.WeaponTintsServicePistol)
                         {
                             tints.Add(tint.Key);
                         }
