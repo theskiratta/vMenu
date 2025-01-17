@@ -368,7 +368,8 @@ namespace vMenuClient.data
 
             // Pepperspray
             {"weapon_pepperspray", "Pepperspray" },
-            {"weapon_antidote", "Antidote Spray" }
+            {"weapon_antidote", "Antidote Spray" },
+            {"weapon_ocspray", "OC Spray Can" },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -600,7 +601,8 @@ namespace vMenuClient.data
 
             // Pepperspray
             {"weapon_pepperspray", "Pepperspray" },
-            {"weapon_antidote", "Antidote Spray" }
+            {"weapon_antidote", "Antidote Spray" },
+            {"weapon_ocspray", "OC Spray Can" },
 
         };
         #endregion
@@ -837,6 +839,7 @@ namespace vMenuClient.data
 
             ["weapon_pepperspray"] = Permission.WPPepperspray,
             ["weapon_antidote"] = Permission.WPPepperspray,
+            ["weapon_ocspray"] = Permission.WPPepperspray,
         };
         #endregion
 
