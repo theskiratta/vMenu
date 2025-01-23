@@ -306,10 +306,12 @@ namespace vMenuClient.data
             // Mine
             { "weapon_mcxspear", "SIG MCX Spear" },
             { "weapon_hk417", "HK 417" },
-            { "weapon_x2", "TASER X2" },
-            { "weapon_x26", "TASER X26 (Yellow)" },
-            { "weapon_x26green", "TASER X26 (Green)" },
-            { "weapon_lesslethal", "Less-Lethal Shotgun" },
+            { "weapon_lesslethal", GetLabelText("WEAPON_LESSLETHAL") },
+            { "weapon_taser7", GetLabelText("WEAPON_TASER7") },
+            { "weapon_taser7green", GetLabelText("WEAPON_TASER7GREEN") },
+            { "weapon_x2", GetLabelText("WEAPON_TASERX2") },
+            { "weapon_x26", GetLabelText("WEAPON_TASERX26") },
+            { "weapon_x26green", GetLabelText("WEAPON_TASERX26GREEN") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
@@ -540,10 +542,12 @@ namespace vMenuClient.data
             // Mine
             { "weapon_mcxspear", "SIG MCX Spear" },
             { "weapon_hk417", "HK 417" },
-            { "weapon_x2", "TASER X2" },
-            { "weapon_x26", "TASER X26 (Yellow)" },
-            { "weapon_x26green", "TASER X26 (Green)" },
-            { "weapon_lesslethal", "Less-Lethal Shotgun" },
+            { "weapon_lesslethal", GetLabelText("WEAPON_LESSLETHAL") },
+            { "weapon_taser7", GetLabelText("WEAPON_TASER7") },
+            { "weapon_taser7green", GetLabelText("WEAPON_TASER7GREEN") },
+            { "weapon_x2", GetLabelText("WEAPON_TASERX2") },
+            { "weapon_x26", GetLabelText("WEAPON_TASERX26") },
+            { "weapon_x26green", GetLabelText("WEAPON_TASERX26GREEN") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
@@ -776,10 +780,12 @@ namespace vMenuClient.data
             // Mine
             ["weapon_mcxspear"] = Permission.WPSKSPEAR,
             ["weapon_hk417"] = Permission.WPSK417,
-            ["weapon_x2"] = Permission.WPSKX2,
-            ["weapon_x26"] = Permission.WPSKX26,
-            ["weapon_x26green"] = Permission.WPSKX26G,
             ["weapon_lesslethal"] = Permission.WPSKBEANBAG,
+            ["weapon_taser7"] = Permission.WPSKTASER,
+            ["weapon_taser7green"] = Permission.WPSKTASER,
+            ["weapon_x2"] = Permission.WPSKTASER,
+            ["weapon_x26"] = Permission.WPSKTASER,
+            ["weapon_x26green"] = Permission.WPSKTASER,
 
 
             // Misc Weapons
@@ -1270,8 +1276,7 @@ namespace vMenuClient.data
 
 
             // CUSTOM WEAPONS
-
-            ["COMPONENT_AT_LESSLETHAL_FLSH"] = "Flashlight",
+            ["COMPONENT_AT_LESSLETHAL_FLSH"] = GetLabelText("WCT_FLASH"),
 
 
             // FM
