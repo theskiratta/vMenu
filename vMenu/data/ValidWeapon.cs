@@ -309,9 +309,9 @@ namespace vMenuClient.data
             { "weapon_lesslethal", GetLabelText("WEAPON_LESSLETHAL") },
             { "weapon_taser7", GetLabelText("WEAPON_TASER7") },
             { "weapon_taser7green", GetLabelText("WEAPON_TASER7GREEN") },
-            { "weapon_x2", GetLabelText("WEAPON_TASERX2") },
-            { "weapon_x26", GetLabelText("WEAPON_TASERX26") },
-            { "weapon_x26green", GetLabelText("WEAPON_TASERX26GREEN") },
+            { "weapon_x2", GetLabelText("WEAPON_X2") },
+            { "weapon_x26", GetLabelText("WEAPON_X26") },
+            { "weapon_x26green", GetLabelText("WEAPON_X26GREEN") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
@@ -545,9 +545,9 @@ namespace vMenuClient.data
             { "weapon_lesslethal", GetLabelText("WEAPON_LESSLETHAL") },
             { "weapon_taser7", GetLabelText("WEAPON_TASER7") },
             { "weapon_taser7green", GetLabelText("WEAPON_TASER7GREEN") },
-            { "weapon_x2", GetLabelText("WEAPON_TASERX2") },
-            { "weapon_x26", GetLabelText("WEAPON_TASERX26") },
-            { "weapon_x26green", GetLabelText("WEAPON_TASERX26GREEN") },
+            { "weapon_x2", GetLabelText("WEAPON_X2") },
+            { "weapon_x26", GetLabelText("WEAPON_X26") },
+            { "weapon_x26green", GetLabelText("WEAPON_X26GREEN") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
