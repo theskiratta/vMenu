@@ -360,6 +360,7 @@ namespace vMenuClient.data
 
             // Slicks new weapons
             {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") },
+            {"weapon_singleshot_ll", GetLabelText("WT_SINGLESHOTLL") },
             {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") },
             {"weapon_jammer", GetLabelText("WT_JAMMER") },
@@ -367,6 +368,7 @@ namespace vMenuClient.data
             {"weapon_servicepistol_9mm", GetLabelText("WT_SRVCPSTL_9MM") },
             {"weapon_servicepistol_auto", GetLabelText("WT_SRVCPSTL_AUTO") },
             {"weapon_servicepistol_45", GetLabelText("WT_SRVCPSTL_45") },
+            {"weapon_sicariosmg", GetLabelText("WT_SICARIOSMG") },
 
             // Pepperspray
             {"weapon_pepperspray", "Pepperspray" },
@@ -595,6 +597,7 @@ namespace vMenuClient.data
 
             // Slicks new guns
             {"weapon_singleshot", GetLabelText("WT_SINGLESHOT") },
+            {"weapon_singleshot_ll", GetLabelText("WT_SINGLESHOTLL") },
             {"weapon_assaultmg", GetLabelText("WT_MG_ASL") },
             {"weapon_automaticpistol", GetLabelText("WT_AUTOPISTOL") } ,
             {"weapon_jammer", GetLabelText("WT_JAMMER") },
@@ -602,6 +605,7 @@ namespace vMenuClient.data
             {"weapon_servicepistol_9mm", GetLabelText("WT_SRVCPSTL_9MM") },
             {"weapon_servicepistol_auto", GetLabelText("WT_SRVCPSTL_AUTO") },
             {"weapon_servicepistol_45", GetLabelText("WT_SRVCPSTL_45") },
+            {"weapon_sicariosmg", GetLabelText("WT_SICARIOSMG") },
 
             // Pepperspray
             {"weapon_pepperspray", "Pepperspray" },
@@ -835,6 +839,7 @@ namespace vMenuClient.data
 
             // Slicks new guns
             ["weapon_singleshot"] = Permission.WPSlickGuns,
+            ["weapon_singleshot_ll"] = Permission.WPSlickGuns,
             ["weapon_assaultmg"] = Permission.WPSlickGuns,
             ["weapon_automaticpistol"] = Permission.WPSlickGuns,
             ["weapon_jammer"] = Permission.WPSlickGuns,
@@ -842,6 +847,7 @@ namespace vMenuClient.data
             ["weapon_servicepistol_9mm"] = Permission.WPSlickGuns,
             ["weapon_servicepistol_auto"] = Permission.WPSlickGuns,
             ["weapon_servicepistol_45"] = Permission.WPSlickGuns,
+            ["weapon_sicariosmg"] = Permission.WPSlickGuns,
 
             ["weapon_pepperspray"] = Permission.WPPepperspray,
             ["weapon_antidote"] = Permission.WPPepperspray,
@@ -2757,6 +2763,16 @@ namespace vMenuClient.data
             ["COMPONENT_SERVICEPISTOL_LSR2_Y"] = GetLabelText("WCT_SRVPSTL_LSR_Y"),
             ["COMPONENT_SERVICEPISTOL_SIGHT"] = GetLabelText("WCT_SRVPSTL_SIGHT"),
             ["COMPONENT_SERVICEPISTOL_NIGHTSIGHT"] = GetLabelText("WCT_SRVPSTL_NIGHTSIGHT"),
+
+            ["COMPONENT_SICARIOSMG_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_SICARIOSMG_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_SICARIOSMG_CLIP_DUAL"] = GetLabelText("WCT_SICARIOSMG_CLIPDUAL"),
+            ["COMPONENT_SICARIOSMG_LASER_RED"] = GetLabelText("WCT_SICARIOSMG_LASER_RED"),
+            ["COMPONENT_SICARIOSMG_LASER_GREEN"] = GetLabelText("WCT_SICARIOSMG_LASER_GREEN"),
+            ["COMPONENT_SICARIOSMG_TOPRAIL"] = GetLabelText("WCT_SICARIOSMG_TOPRAIL"),
+            ["COMPONENT_SICARIOSMG_SUPPRESSOR"] = GetLabelText("WCT_SICARIOSMG_SUPP1"),
+            ["COMPONENT_SICARIOSMG_SUPPRESSOR2"] = GetLabelText("WCT_SICARIOSMG_SUPP2"),
+            ["COMPONENT_SICARIOSMG_SCOPE"] = GetLabelText("WCT_SCOPE_SML"),
         };
         #endregion
 
@@ -2888,6 +2904,14 @@ namespace vMenuClient.data
             ["Training Day - Blue"] = 17,
             ["Training Day - Green"] = 18,
             ["Training Day - Red"] = 19,
+        };
+        public static readonly Dictionary<string, int> WeaponTintsSingleshotLL = new()
+        {
+            ["Base"] = 0,
+            ["LTL Green"] = 1,
+            ["LTL Orange"] = 2,
+            ["LTL Yellow"] = 3,
+            ["LTL Blue"] = 4,
         };
         #endregion
 

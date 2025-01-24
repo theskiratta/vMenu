@@ -584,6 +584,13 @@ namespace vMenuClient.menus
                             tints.Add(tint.Key);
                         }
                     }
+                    else if (weapon.Name.Contains(" Launcher (Less-Lethal)"))
+                    {
+                        foreach (var tint in ValidWeapons.WeaponTintsSingleshotLL)
+                        {
+                            tints.Add(tint.Key);
+                        }
+                    }
                     else
                     {
                         foreach (var tint in ValidWeapons.WeaponTints)
