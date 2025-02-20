@@ -332,6 +332,7 @@ namespace vMenuShared
           
           
             // Custom
+            // Fluffy
             WPFMAKM,
             WPFMGLK17,
             WPFM19X,
@@ -348,6 +349,7 @@ namespace vMenuShared
             WPFMMDR2,
             WPFMSCAR,
             WPFMSR25,
+            // Marko
             WPMMAXMC,
             WPMMM2,
             WPMMCTSFO,
@@ -367,13 +369,16 @@ namespace vMenuShared
             WPMMRPK,
             WPMM2011,
             WPMMUZI,
+            // Mine
             WPSKSPEAR,
             WPSK417,
             WPSKTASER,
             WPSKBEANBAG,
             WPFlashBang,
-            WPDDM4V7,
+            WPSKUMP45,
             WPPepperspray,
+            // Misc
+            WPDDM4V7,
             WPSlickGuns,
             #endregion
 

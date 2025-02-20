@@ -312,6 +312,7 @@ namespace vMenuClient.data
             { "weapon_x2", GetLabelText("WEAPON_X2") },
             { "weapon_x26", GetLabelText("WEAPON_X26") },
             { "weapon_x26green", GetLabelText("WEAPON_X26GREEN") },
+            { "weapon_ump45", GetLabelText("WEAPON_UMP45") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
@@ -550,6 +551,7 @@ namespace vMenuClient.data
             { "weapon_x2", GetLabelText("WEAPON_X2") },
             { "weapon_x26", GetLabelText("WEAPON_X26") },
             { "weapon_x26green", GetLabelText("WEAPON_X26GREEN") },
+            { "weapon_ump45", GetLabelText("WEAPON_UMP45") },
 
             // Misc
             { "weapon_grenadelauncher_smoke", "Grenadelauncher (Smoke)" },
@@ -790,6 +792,7 @@ namespace vMenuClient.data
             ["weapon_x2"] = Permission.WPSKTASER,
             ["weapon_x26"] = Permission.WPSKTASER,
             ["weapon_x26green"] = Permission.WPSKTASER,
+            ["weapon_ump45"] = Permission.WPSKUMP45,
 
 
             // Misc Weapons
@@ -2773,6 +2776,13 @@ namespace vMenuClient.data
             ["COMPONENT_SICARIOSMG_SUPPRESSOR"] = GetLabelText("WCT_SICARIOSMG_SUPP1"),
             ["COMPONENT_SICARIOSMG_SUPPRESSOR2"] = GetLabelText("WCT_SICARIOSMG_SUPP2"),
             ["COMPONENT_SICARIOSMG_SCOPE"] = GetLabelText("WCT_SCOPE_SML"),
+
+            ["COMPONENT_UMP45_SUPP"] =  GetLabelText("WCT_SUPP"),
+            ["COMPONENT_UMP45_SCOPE"] = GetLabelText("WCT_SCOPE_SML"),
+            ["COMPONENT_UMP45_FLSH"] = GetLabelText("WCT_FLASH"),
+            ["COMPONENT_UMP45_CLIP_01"] = GetLabelText("WCT_CLIP1"),
+            ["COMPONENT_UMP45_CLIP_02"] = GetLabelText("WCT_CLIP2"),
+            ["COMPONENT_UMP45_AFGRIP"] = GetLabelText("WCT_GRIP"),
         };
         #endregion
 
