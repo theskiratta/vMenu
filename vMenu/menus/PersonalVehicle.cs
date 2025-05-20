@@ -21,6 +21,20 @@ namespace vMenuClient.menus
         public PersonalVehicle() { }
 
         public Vehicle CurrentPersonalVehicle { get; internal set; } = null;
+        private int netVehicleHandle;
+
+        private Vehicle NetExistCheck()
+        {
+            int vehHandle = NetToVeh(netVehicleHandle);
+            if (vehHandle != 0)
+            {
+                CurrentPersonalVehicle = new Vehicle(vehHandle);
+                return CurrentPersonalVehicle;
+            } else
+            {
+                return null; // I.e. vehicle was deleted and thus cannot be recovered.
+            }
+        }
 
         public Menu VehicleDoorsMenu { get; internal set; } = null;
 
@@ -125,6 +139,12 @@ namespace vMenuClient.menus
             menu.OnListItemSelect += (sender, item, itemIndex, index) =>
             {
                 var veh = CurrentPersonalVehicle;
+                if (veh != null && !veh.Exists())
+                {
+                    CurrentPersonalVehicle = NetExistCheck();
+                    NetworkRequestControlOfEntity(CurrentPersonalVehicle.Handle);
+                    Wait(200); // allow the network control request to go through.
+                }
                 if (veh != null && veh.Exists())
                 {
                     if (!NetworkHasControlOfEntity(CurrentPersonalVehicle.Handle))
@@ -174,6 +194,12 @@ namespace vMenuClient.menus
             // Handle checkbox changes
             menu.OnCheckboxChange += (sender, item, index, _checked) =>
             {
+                if (CurrentPersonalVehicle != null && !CurrentPersonalVehicle.Exists())
+                {
+                    CurrentPersonalVehicle = NetExistCheck();
+                    NetworkRequestControlOfEntity(CurrentPersonalVehicle.Handle);
+                    Wait(200); // allow the network control request to go through.
+                }
                 if (item == enableBlip)
                 {
                     EnableVehicleBlip = _checked;
@@ -233,6 +259,12 @@ namespace vMenuClient.menus
             // Handle button presses.
             menu.OnItemSelect += (sender, item, index) =>
             {
+                if (CurrentPersonalVehicle != null && !CurrentPersonalVehicle.Exists())
+                {
+                    CurrentPersonalVehicle = NetExistCheck();
+                    NetworkRequestControlOfEntity(CurrentPersonalVehicle.Handle);
+                    Wait(200); // allow the network control request to go through.
+                }
                 if (item == setVehice)
                 {
                     if (Game.PlayerPed.IsInVehicle())
@@ -243,6 +275,7 @@ namespace vMenuClient.menus
                             if (Game.PlayerPed == veh.Driver)
                             {
                                 CurrentPersonalVehicle = veh;
+                                netVehicleHandle = VehToNet(veh.Handle);
                                 veh.PreviouslyOwnedByPlayer = true;
                                 veh.IsPersistent = true;
                                 if (EnableVehicleBlip && IsAllowed(Permission.PVAddBlip))
@@ -388,6 +421,12 @@ namespace vMenuClient.menus
             VehicleDoorsMenu.OnItemSelect += (sender, item, index) =>
             {
                 var veh = CurrentPersonalVehicle;
+                if (veh != null && !veh.Exists())
+                {
+                    CurrentPersonalVehicle = NetExistCheck();
+                    NetworkRequestControlOfEntity(CurrentPersonalVehicle.Handle);
+                    Wait(200); // allow the network control request to go through.
+                }
                 if (veh != null && veh.Exists() && !veh.IsDead)
                 {
                     if (!NetworkHasControlOfEntity(CurrentPersonalVehicle.Handle))
